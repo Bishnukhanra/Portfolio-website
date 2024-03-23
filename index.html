@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishnu's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c976672c8d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- home section  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="flex">
+                <div class="mypic">
+                    <img class="mypic" src="profile-pic.png" width="90%" alt="" srcset="">
+                </div>
+                <div class="header-text">
+        
+                    <h1><span>Hi myself Bishnu</span></h1>
+                    <p>A Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about me1.jpg" width="80%">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="aboutp">As a BCA pursuing student,what peaks my interests in programming are subjects like Java,Python,C etc..The languages such as html,css,js are also in my expertise</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('Experience')">Experience</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JS</span><br></li>
+                            <li><span>C</span><br></li>
+                            <li><span>Python</span><br></li>
+                            <li><span>Java</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>Passed MP With A Grade Marks</li>
+                            <li><span>2022</span><br>Passed HS with O Grade Marks
+                            <li>
+                            <li><span>2022</span><br>Pursuring BCA In Brainware University <br>9.8 CGPA (Aggregate till  3rd semester)</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>March 2024 1 Month</span><br>
+                            Intership in CodeAlpha at Web Developer position
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Screenshot (8).png">
+                    <div class="layer">
+                        <h3>Sign up Page</h3>
+                        <a href="https://bishnukhanra.github.io/sign-page/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot 2024-02-18 223744.png" sizes="60%">
+                    <div class="layer">
+                        <h3>About Netaji</h3>
+                        <p></p>
+                        <a href="https://bishnukhanra.github.io/about-netaji/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Social Media Dashboard</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Social Media Dashboard</h3>
+                        <p>Social Media Dashboard </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="https://github.com/Bishnukhanra" class="btn">See More </a>
+        </div>
+    </div>
+    <!-- contact information -->
+    <div id="contact">
+        <div class="container">
+            <div class="row1">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a class="cont"
+                            href="mailto:bishnukhanra8@gmail.com">bishnukhanra8@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i>91-9679193233</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/people/Bishnu-Khanra/100073464371234/?mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bishnu_khanra2004/?igsh=MW5wejNlYzl2bHBmdg%3D%3D"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bishnu-khanra-8a5a862a8/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bishnukhanra"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright This Website is Made By Bisnnu</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
